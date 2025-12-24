@@ -9,7 +9,6 @@
 <body>
     <div class="banner-container">
         <div class="logo logo-left">
-            <!-- Ganti src dengan path logo Danantara Anda -->
             <img src="src/danantara.png" alt="Danantara Indonesia Logo">
         </div>
         <div class="text-center">
@@ -17,12 +16,10 @@
             <p>PLN UP3 MAKASSAR SELATAN</p>
         </div>
         <div class="logo logo-right">
-            <!-- Ganti src dengan path logo PLN Anda -->
             <img src="src/pln.png" alt="PLN Logo">
         </div>
     </div>
 
-    <div>
     <div class="filters-container">
         <select name="month" id="month-select">
             <option value="desember" selected>Desember</option>
@@ -40,14 +37,176 @@
         </select>
         <select name="unit" id="unit-select">
             <option value="up3-makassar-selatan">UP3 Makassar Selatan</option>
-            <option value="kalebajeng" selected>KALEBAJENG</option>
+            <option value="kalebajeng">KALEBAJENG</option>
             <option value="mattoanging">MATTOANGING</option>
-            <option value="malino">MALINO</option>
+            <option value="malino" selected>MALINO</option>
             <option value="sungguminasa">SUNGGUMINASA</option>
             <option value="takalar">TAKALAR</option>
             <option value="panakkukang">PANAKKUKANG</option>
         </select>
     </div>
-</div>
+
+    <div class="content-wrapper">
+        <div class="info-header">
+            Menurunkan gangguan permanen dan temporer dari 185 kali gangguan menjadi 167 kali gangguan pada 31 Desember 2025
+        </div>
+
+        <div class="table-container">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th rowspan="2" class="header-main" style="min-width: 120px;">UNIT</th>
+                        <th rowspan="2" class="header-main" style="min-width: 280px;">LEAD MEASURE</th>
+                        <th rowspan="2" class="header-main" style="min-width: 100px;">METRIK</th>
+                        <th colspan="11" class="header-group month-header" style="padding: 18px 12px;">JULI 2025</th>
+                    </tr>
+                    <tr>
+                        <th class="header-sub" style="min-width: 90px;">Pekan 1</th>
+                        <th class="header-sub status-col" style="min-width: 70px;">Status</th>
+                        <th class="header-sub" style="min-width: 90px;">Pekan 2</th>
+                        <th class="header-sub status-col" style="min-width: 70px;">Status</th>
+                        <th class="header-sub" style="min-width: 90px;">Pekan 3</th>
+                        <th class="header-sub status-col" style="min-width: 70px;">Status</th>
+                        <th class="header-sub" style="min-width: 90px;">Pekan 4</th>
+                        <th class="header-sub status-col" style="min-width: 70px;">Status</th>
+                        <th class="header-sub" style="min-width: 100px;">Kumulatif</th>
+                        <th class="header-sub status-col" style="min-width: 70px;">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Row 1: Inspeksi JTM -->
+                    <tr>
+                        <td rowspan="14" class="unit-cell">MALINO</td>
+                        <td rowspan="2" class="lead-measure-cell">Inspeksi JTM sebanyak 364,99 kms s.d 31 Desember 2025</td>
+                        <td class="metric-label">Target (kms)</td>
+                        <td class="value-cell pekan-col">15.00</td>
+                        <td rowspan="2" class="emoji-cell status-col">😊</td>
+                        <td class="value-cell pekan-col">15.00</td>
+                        <td rowspan="2" class="emoji-cell status-col">😊</td>
+                        <td class="value-cell pekan-col">15.00</td>
+                        <td rowspan="2" class="emoji-cell status-col">😊</td>
+                        <td class="value-cell pekan-col">15.00</td>
+                        <td rowspan="2" class="emoji-cell status-col">😊</td>
+                        <td class="value-cell pekan-col" style="font-weight: 900; color: #1b6176;">60.00</td>
+                        <td rowspan="2" class="emoji-cell status-col">😊</td>
+                    </tr>
+                    <tr>
+                        <td class="metric-label">Realisasi (kms)</td>
+                        <td class="value-cell pekan-col" style="color: #28a745;">41.73</td>
+                        <td class="value-cell pekan-col" style="color: #28a745;">46.49</td>
+                        <td class="value-cell pekan-col" style="color: #28a745;">37.35</td>
+                        <td class="value-cell pekan-col" style="color: #28a745;">93.30</td>
+                        <td class="value-cell pekan-col" style="font-weight: 900; color: #28a745;">218.87</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="metric-label" style="text-align: right; padding-right: 20px;">Persentase</td>
+                        <td colspan="2" class="percentage-green">278.20%</td>
+                        <td colspan="2" class="percentage-green">309.93%</td>
+                        <td colspan="2" class="percentage-green">249.00%</td>
+                        <td colspan="2" class="percentage-green">622.00%</td>
+                        <td colspan="2" class="percentage-green">364.78%</td>
+                    </tr>
+
+                    <!-- Row 2: Tindak Lanjut temuan JTM -->
+                    <tr>
+                        <td rowspan="2" class="lead-measure-cell">Tindak Lanjut temuan JTM s.d 31 Desember 2025</td>
+                        <td class="metric-label">Target (Titik)</td>
+                        <td class="value-cell pekan-col">5.00</td>
+                        <td rowspan="2" class="emoji-cell status-col">😞</td>
+                        <td class="value-cell pekan-col">5.00</td>
+                        <td rowspan="2" class="emoji-cell status-col">😊</td>
+                        <td class="value-cell pekan-col">5.00</td>
+                        <td rowspan="2" class="emoji-cell status-col">😞</td>
+                        <td class="value-cell pekan-col">5.00</td>
+                        <td rowspan="2" class="emoji-cell status-col">😞</td>
+                        <td class="value-cell pekan-col" style="font-weight: 900; color: #1b6176;">20.00</td>
+                        <td rowspan="2" class="emoji-cell status-col">😞</td>
+                    </tr>
+                    <tr>
+                        <td class="metric-label">Realisasi (Titik)</td>
+                        <td class="value-cell pekan-col" style="color: #dc3545;">1.00</td>
+                        <td class="value-cell pekan-col" style="color: #dc3545;">0.00</td>
+                        <td class="value-cell pekan-col" style="color: #dc3545;">0.00</td>
+                        <td class="value-cell pekan-col" style="color: #dc3545;">2.00</td>
+                        <td class="value-cell pekan-col" style="font-weight: 900; color: #dc3545;">3.00</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="metric-label" style="text-align: right; padding-right: 20px;">Persentase</td>
+                        <td colspan="2" class="percentage-red">20.00%</td>
+                        <td colspan="2" class="percentage-red">0.00%</td>
+                        <td colspan="2" class="percentage-red">0.00%</td>
+                        <td colspan="2" class="percentage-red">40.00%</td>
+                        <td colspan="2" class="percentage-red">15.00%</td>
+                    </tr>
+
+                    <!-- Row 3: Inspeksi Gardu Distribusi -->
+                    <tr>
+                        <td rowspan="2" class="lead-measure-cell">Inspeksi Gardu Distribusi sebanyak 282 gardu s.d 31 Desember 2025</td>
+                        <td class="metric-label">Target (Gardu)</td>
+                        <td class="value-cell pekan-col">12.00</td>
+                        <td rowspan="2" class="emoji-cell status-col">😞</td>
+                        <td class="value-cell pekan-col">12.00</td>
+                        <td rowspan="2" class="emoji-cell status-col">😞</td>
+                        <td class="value-cell pekan-col">12.00</td>
+                        <td rowspan="2" class="emoji-cell status-col">😊</td>
+                        <td class="value-cell pekan-col">12.00</td>
+                        <td rowspan="2" class="emoji-cell status-col">😊</td>
+                        <td class="value-cell pekan-col" style="font-weight: 900; color: #1b6176;">48.00</td>
+                        <td rowspan="2" class="emoji-cell status-col">😞</td>
+                    </tr>
+                    <tr>
+                        <td class="metric-label">Realisasi (Gardu)</td>
+                        <td class="value-cell pekan-col" style="color: #dc3545;">1.00</td>
+                        <td class="value-cell pekan-col" style="color: #dc3545;">0.00</td>
+                        <td class="value-cell pekan-col" style="color: #28a745;">12.00</td>
+                        <td class="value-cell pekan-col" style="color: #28a745;">22.00</td>
+                        <td class="value-cell pekan-col" style="font-weight: 900; color: #dc3545;">35.00</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="metric-label" style="text-align: right; padding-right: 20px;">Persentase</td>
+                        <td colspan="2" class="percentage-red">8.33%</td>
+                        <td colspan="2" class="percentage-red">0.00%</td>
+                        <td colspan="2" class="percentage-green">100.00%</td>
+                        <td colspan="2" class="percentage-green">183.33%</td>
+                        <td colspan="2" class="percentage-red">72.92%</td>
+                    </tr>
+
+                    <!-- Row 4: Tindak Lanjut temuan Gardu -->
+                    <tr>
+                        <td rowspan="2" class="lead-measure-cell">Tindak Lanjut temuan Gardu Distribusi s.d 31 Desember 2025</td>
+                        <td class="metric-label">Target (Gardu)</td>
+                        <td class="value-cell pekan-col">6.00</td>
+                        <td rowspan="2" class="emoji-cell status-col">😞</td>
+                        <td class="value-cell pekan-col">6.00</td>
+                        <td rowspan="2" class="emoji-cell status-col">😊</td>
+                        <td class="value-cell pekan-col">6.00</td>
+                        <td rowspan="2" class="emoji-cell status-col">😞</td>
+                        <td class="value-cell pekan-col">6.00</td>
+                        <td rowspan="2" class="emoji-cell status-col">😞</td>
+                        <td class="value-cell pekan-col" style="font-weight: 900; color: #1b6176;">24.00</td>
+                        <td rowspan="2" class="emoji-cell status-col">😞</td>
+                    </tr>
+                    <tr>
+                        <td class="metric-label">Realisasi (Gardu)</td>
+                        <td class="value-cell pekan-col" style="color: #dc3545;">2.00</td>
+                        <td class="value-cell pekan-col" style="color: #28a745;">7.00</td>
+                        <td class="value-cell pekan-col" style="color: #dc3545;">0.00</td>
+                        <td class="value-cell pekan-col" style="color: #dc3545;">1.00</td>
+                        <td class="value-cell pekan-col" style="font-weight: 900; color: #dc3545;">10.00</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="metric-label" style="text-align: right; padding-right: 20px;">Persentase</td>
+                        <td colspan="2" class="percentage-red">33.33%</td>
+                        <td colspan="2" class="percentage-green">116.67%</td>
+                        <td colspan="2" class="percentage-red">0.00%</td>
+                        <td colspan="2" class="percentage-red">16.67%</td>
+                        <td colspan="2" class="percentage-red">41.67%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
