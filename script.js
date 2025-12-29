@@ -55,38 +55,65 @@ const sampleTableData = [
     {
         leadMeasure: 'Inspeksi JTM sebanyak 364,99 kms s.d 31 Desember 2025',
         metric: 'kms',
-        pekan1: { target: 15.00, realisasi: 41.73, persen: 278.20, status: 'baik' },
-        pekan2: { target: 15.00, realisasi: 46.49, persen: 309.93, status: 'baik' },
-        pekan3: { target: 15.00, realisasi: 37.35, persen: 249.00, status: 'baik' },
-        pekan4: { target: 15.00, realisasi: 93.30, persen: 622.00, status: 'baik' },
-        kumulatif: { target: 60.00, realisasi: 218.87, persen: 364.78, status: 'baik' }
+        pekan1: { target: 15.00, realisasi: 44.75, persen: 298.33, status: 'baik' },
+        pekan2: { target: 15.00, realisasi: 37.56, persen: 250.40, status: 'baik' },
+        pekan3: { target: 15.00, realisasi: 43.00, persen: 286.67, status: 'baik' },
+        pekan4: { target: 15.00, realisasi: 40.00, persen: 266.67, status: 'baik' },
+        kumulatif: { target: 60.00, realisasi: 165.31, persen: 275.52, status: 'baik' }
     },
     {
         leadMeasure: 'Tindak Lanjut temuan JTM s.d 31 Desember 2025',
         metric: 'Titik',
-        pekan1: { target: 5.00, realisasi: 1.00, persen: 20.00, status: 'kurang' },
-        pekan2: { target: 5.00, realisasi: 0.00, persen: 0.00, status: 'kurang' },
-        pekan3: { target: 5.00, realisasi: 0.00, persen: 0.00, status: 'kurang' },
-        pekan4: { target: 5.00, realisasi: 2.00, persen: 40.00, status: 'kurang' },
-        kumulatif: { target: 20.00, realisasi: 3.00, persen: 15.00, status: 'kurang' }
+        pekan1: { target: 5.00, realisasi: 2.00, persen: 40.00, status: 'kurang' },
+        pekan2: { target: 5.00, realisasi: 5.00, persen: 100.00, status: 'baik' },
+        pekan3: { target: 5.00, realisasi: 4.00, persen: 80.00, status: 'kurang' },
+        pekan4: { target: 5.00, realisasi: 4.00, persen: 80.00, status: 'kurang' },
+        kumulatif: { target: 20.00, realisasi: 15.00, persen: 75.00, status: 'kurang' }
     },
     {
         leadMeasure: 'Inspeksi Gardu Distribusi sebanyak 282 gardu s.d 31 Desember 2025',
         metric: 'Gardu',
-        pekan1: { target: 12.00, realisasi: 1.00, persen: 8.33, status: 'kurang' },
-        pekan2: { target: 12.00, realisasi: 0.00, persen: 0.00, status: 'kurang' },
-        pekan3: { target: 12.00, realisasi: 12.00, persen: 100.00, status: 'baik' },
-        pekan4: { target: 12.00, realisasi: 22.00, persen: 183.33, status: 'baik' },
-        kumulatif: { target: 48.00, realisasi: 35.00, persen: 72.92, status: 'kurang' }
+        pekan1: { target: 12.00, realisasi: 12.00, persen: 100.00, status: 'baik' },
+        pekan2: { target: 12.00, realisasi: 14.00, persen: 116.67, status: 'baik' },
+        pekan3: { target: 12.00, realisasi: 2.00, persen: 16.67, status: 'kurang' },
+        pekan4: { target: 12.00, realisasi: 0.00, persen: 0.00, status: 'kurang' },
+        kumulatif: { target: 48.00, realisasi: 28.00, persen: 58.33, status: 'kurang' }
     },
     {
         leadMeasure: 'Tindak Lanjut temuan Gardu Distribusi s.d 31 Desember 2025',
         metric: 'Gardu',
-        pekan1: { target: 6.00, realisasi: 2.00, persen: 33.33, status: 'kurang' },
+        pekan1: { target: 6.00, realisasi: 7.00, persen: 116.67, status: 'baik' },
         pekan2: { target: 6.00, realisasi: 7.00, persen: 116.67, status: 'baik' },
-        pekan3: { target: 6.00, realisasi: 0.00, persen: 0.00, status: 'kurang' },
-        pekan4: { target: 6.00, realisasi: 1.00, persen: 16.67, status: 'kurang' },
-        kumulatif: { target: 24.00, realisasi: 10.00, persen: 41.67, status: 'kurang' }
+        pekan3: { target: 6.00, realisasi: 6.00, persen: 100.00, status: 'baik' },
+        pekan4: { target: 6.00, realisasi: 9.00, persen: 150.00, status: 'baik' },
+        kumulatif: { target: 24.00, realisasi: 29.00, persen: 120.83, status: 'baik' }
+    },
+    {
+        leadMeasure: 'Pelaksanaan ROW sebanyak 8400 titik s.d 31 Desember 2025',
+        metric: 'Titik',
+        pekan1: { target: 350.00, realisasi: 356.00, persen: 101.71, status: 'baik' },
+        pekan2: { target: 350.00, realisasi: 324.00, persen: 92.57, status: 'kurang' },
+        pekan3: { target: 350.00, realisasi: 340.00, persen: 97.14, status: 'kurang' },
+        pekan4: { target: 350.00, realisasi: 313.00, persen: 89.43, status: 'kurang' },
+        kumulatif: { target: 1400.00, realisasi: 1333.00, persen: 95.21, status: 'kurang' }
+    },
+    {
+        leadMeasure: 'Penebangan Pohon sebanyak 540 Pohon s.d 31 Desember 2025',
+        metric: 'Pohon',
+        pekan1: { target: 23.00, realisasi: 34.00, persen: 147.83, status: 'baik' },
+        pekan2: { target: 23.00, realisasi: 26.00, persen: 113.04, status: 'baik' },
+        pekan3: { target: 23.00, realisasi: 19.00, persen: 82.61, status: 'kurang' },
+        pekan4: { target: 23.00, realisasi: 27.00, persen: 117.39, status: 'baik' },
+        kumulatif: { target: 92.00, realisasi: 106.00, persen: 115.22, status: 'baik' }
+    },
+    {
+        leadMeasure: 'Pemasangan cover isolator sebanyak 217 Buah s.d 31 Desember 2025',
+        metric: 'Buah',
+        pekan1: { target: 9.00, realisasi: 19.00, persen: 211.11, status: 'baik' },
+        pekan2: { target: 9.00, realisasi: 10.00, persen: 111.11, status: 'baik' },
+        pekan3: { target: 9.00, realisasi: 9.00, persen: 100.00, status: 'baik' },
+        pekan4: { target: 9.00, realisasi: 15.00, persen: 166.67, status: 'baik' },
+        kumulatif: { target: 36.00, realisasi: 53.00, persen: 147.22, status: 'baik' }
     }
 ];
 
