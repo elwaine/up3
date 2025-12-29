@@ -1,9 +1,17 @@
+/* ================= ROOT SIZE CONTROL ================= */
+:root {
+    --table-font: 15px;
+    --emoji-size: 26px;
+}
+
+/* ================= RESET ================= */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* ================= BODY ================= */
 body {
     font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: #f5f7fa;
@@ -11,7 +19,7 @@ body {
     padding: 20px;
 }
 
-/* ===== BANNER STYLES ===== */
+/* ================= BANNER ================= */
 .banner-container {
     display: flex;
     justify-content: space-between;
@@ -26,299 +34,159 @@ body {
 
 .logo img {
     height: 60px;
-    vertical-align: middle;
 }
 
 .text-center {
-    text-align: left;
-    font-weight: bold;
-    flex-grow: 1;
-    padding: 0 20px;
-    padding-left: 40px;
     text-align: center;
+    flex-grow: 1;
+    font-weight: bold;
 }
 
 .text-center p {
     margin: 4px 0;
-    font-size: 1.9em;
+    font-size: 1.6em;
 }
 
-/* ===== FILTERS STYLES ===== */
+/* ================= FILTER ================= */
 .filters-container {
     display: flex;
     gap: 10px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    justify-content: flex-start;
+    margin: 20px 0 30px;
 }
 
 .filters-container select {
-    padding: 8px 12px;
+    padding: 10px 16px;
     border-radius: 20px;
-    border: 1px solid #ccc;
-    background-color: #105265;
+    border: none;
+    background: #105265;
     color: white;
     font-weight: bold;
     cursor: pointer;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.4-12.8z%22%2F%3E%3C%2Fsvg%3E');
-    background-repeat: no-repeat;
-    background-position: right 12px center;
-    background-size: 10px;
-    padding-right: 30px;
-    transition: background-color 0.2s ease;
 }
 
-.filters-container select:hover {
-    background-color: #0d3f4f;
-}
-
-/* ===== CONTENT WRAPPER ===== */
+/* ================= CONTENT ================= */
 .content-wrapper {
     background: white;
     border-radius: 16px;
     padding: 32px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-    border: 1px solid #e8ecef;
 }
 
+/* ================= HEADER INFO ================= */
 .info-header {
-    background: linear-gradient(135deg, #1b6176 0%, #0d4557 100%);
+    background: linear-gradient(135deg, #1b6176, #0d4557);
     color: white;
-    padding: 20px 28px;
+    padding: 20px;
     border-radius: 12px;
-    margin-bottom: 32px;
-    font-size: 1.4em;
-    font-weight: 600;
-    text-align: left;
-    box-shadow: 0 2px 12px rgba(27, 97, 118, 0.15);
-    line-height: 1.6;
+    margin-bottom: 25px;
+    font-size: 1.3em;
 }
 
-/* ===== TABLE STYLES ===== */
+/* ================= TABLE ================= */
 .table-container {
-    background: #ffffff;
     border-radius: 12px;
-    padding: 0;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-    overflow: hidden;
+    overflow: auto;
     border: 1px solid #e8ecef;
 }
 
 .data-table {
     width: 100%;
-    border-collapse: separate;
-    border-spacing: 0;
-    font-size: 13px;
+    border-collapse: collapse;
+    font-size: var(--table-font);
 }
 
-/* Table Headers */
+/* ===== HEADERS ===== */
 .data-table th {
     background: #1b6176;
     color: white;
-    padding: 16px 12px;
+    padding: 14px;
     text-align: center;
-    font-weight: 600;
-    border: none;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    position: relative;
-    border-right: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.data-table th:last-child {
-    border-right: none;
-}
-
-.header-main {
-    font-size: 1.6em;
-    padding: 18px 12px !important;
-    font-weight: 700;
+    font-weight: bold;
+    border: 1px solid rgba(255,255,255,0.2);
 }
 
 .header-group {
     background: #0d4557;
-    font-size: 15px;
-    letter-spacing: 1.2px;
 }
 
 .header-sub {
-    font-size: 13px;
-    padding: 14px 10px !important;
     background: #0d4557;
-    font-weight: 600;
 }
 
-/* Table Cells */
+/* ===== CELLS ===== */
 .data-table td {
-    padding: 14px 12px;
+    padding: 14px;
     text-align: center;
-    border: none;
-    border-bottom: 1px solid #f0f2f5;
-    border-right: 1px solid #f0f2f5;
-    font-size: 13px;
-    vertical-align: middle;
-    transition: all 0.15s ease;
+    border: 1px solid #e5e7eb;
 }
 
-.data-table td:last-child {
-    border-right: none;
-}
-
-/* Unit Cell */
+/* ===== UNIT ===== */
 .unit-cell {
     background: #1b6176;
     color: white;
-    font-weight: 700;
-    font-size: 17px;
-    letter-spacing: 1.5px;
-    border: none !important;
+    font-weight: bold;
+    font-size: calc(var(--table-font) + 4px);
 }
 
-/* Lead Measure Cell */
+/* ===== LEAD MEASURE ===== */
 .lead-measure-cell {
     text-align: left;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 16px;
     font-weight: 600;
-    background: #fafbfc;
-    color: #2d3748;
-    line-height: 1.5;
-    border-left: 3px solid #1b6176 !important;
-}
-
-/* Metric Label */
-.metric-label {
-    font-weight: 700;
-    color: #4a5568;
-    background-color: #f7fafc;
-    text-transform: uppercase;
-    font-size: 10.5px;
-    letter-spacing: 0.8px;
-}
-
-/* Value Cell */
-.value-cell {
-    font-weight: 600;
-    color: #2d3748;
-    font-size: 13px;
-    background-color: #ffffff;
-}
-
-/* Percentage Cells */
-.percentage-green {
-    background: #10b981 !important;
-    color: white;
-    font-weight: 700;
-    font-size: 13px;
-}
-
-.percentage-red {
-    background: #ef4444 !important;
-    color: white;
-    font-weight: 700;
-    font-size: 13px;
-}
-
-.percentage-yellow {
-    background: #f59e0b !important;
-    color: white;
-    font-weight: 700;
-    font-size: 13px;
-}
-
-/* Emoji Status Cell */
-.emoji-cell {
-    font-size: 78px;
-    padding: 12px;
     background: #f9fafb;
 }
 
-/* Table Row Styles */
-.data-table tbody tr:nth-child(6n+1),
-.data-table tbody tr:nth-child(6n+2),
-.data-table tbody tr:nth-child(6n+3) {
-    background-color: #ffffff;
+/* ===== LABEL ===== */
+.metric-label {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: calc(var(--table-font) - 2px);
+    background: #f1f5f9;
 }
 
-.data-table tbody tr:nth-child(6n+4),
-.data-table tbody tr:nth-child(6n+5),
-.data-table tbody tr:nth-child(6n+6) {
-    background-color: #fafbfc;
+/* ===== VALUE ===== */
+.value-cell {
+    font-weight: 600;
 }
 
-.data-table tbody tr:hover td:not(.unit-cell) {
-    background-color: #f0f9ff;
+/* ===== PERCENTAGE ===== */
+.percentage-green {
+    background: #10b981;
+    color: white;
+    font-weight: bold;
 }
 
-/* Column Specific Styles */
-.pekan-col {
-    background: #ffffff;
+.percentage-red {
+    background: #ef4444;
+    color: white;
+    font-weight: bold;
 }
 
-.status-col {
-    position: relative;
-    padding: 12px !important;
+.percentage-yellow {
+    background: #f59e0b;
+    color: white;
+    font-weight: bold;
 }
 
-/* ===== RESPONSIVE DESIGN ===== */
-@media (max-width: 1200px) {
-    .table-container {
-        overflow-x: auto;
-    }
-    
-    .data-table {
-        min-width: 1400px;
-    }
+/* ===== EMOJI ===== */
+.emoji-cell {
+    font-size: var(--emoji-size);
+    background: #f9fafb;
 }
 
+/* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
-    body {
-        padding: 10px;
+    :root {
+        --table-font: 13px;
+        --emoji-size: 22px;
     }
 
     .banner-container {
         flex-direction: column;
         text-align: center;
-        padding: 15px;
-    }
-
-    .logo {
-        margin: 10px 0;
     }
 
     .text-center p {
-        font-size: 0.95em;
-    }
-
-    .filters-container {
-        flex-direction: column;
-        margin-top: 15px;
-        margin-bottom: 20px;
-    }
-
-    .filters-container select {
-        width: 100%;
-    }
-
-    .content-wrapper {
-        padding: 15px;
-    }
-
-    .info-header {
-        font-size: 13px;
-        padding: 15px;
-    }
-
-    .data-table {
-        font-size: 11px;
-    }
-
-    .emoji-cell {
-        font-size: 24px;
-        padding: 8px;
+        font-size: 1.1em;
     }
 }
